@@ -37,14 +37,34 @@ body {
 #img6 img { border-color: black; }
 
 #img1 { top: 20px;
-     left: 100px; }
+        left: 100px; }
 #img2 { top: 120px; 
-    left: 300px; }
+        left: 300px; }
 #img3 { top: 20px; 
-    left: 500px; }
+        left: 500px; }
 #img4 { top: 120px; 
-    left: 700px; }
+        left: 700px; }
 #img5 { top: 20px; 
-    left: 900px; }
+        left: 900px; }
 #img6 { top: 120px; 
-    left: 1100px; }
+        left: 1100px; }
+
+
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+}
+
+.box:hover .caption {
+  opacity: 1;
+}
